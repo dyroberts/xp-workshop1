@@ -27,4 +27,13 @@ public class RPSTest {
         assertEquals(P2, RPS.play(ROCK, PAPER));
     }
 
+    @Test
+    public void whenP1ThrowsScissorsAndP2ThrowsRock_P2ShouldWIn() {
+        assertEquals(P2, RPS.play(SCISSORS, ROCK));
+    }
+
+    @Test
+    public void whenP1ThrowsPaperAndP2ThrowsScissors_P2ShouldWIn() {
+        assertEquals(P2, RPS.play(PAPER, SCISSORS));
+    }
 }
